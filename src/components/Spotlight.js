@@ -5,7 +5,7 @@ import Download from "../assets/download.png";
 
 function Spotlight() {
   return (
-    <div className="grid place-items-center h-[90vh] bg-hero-pattern bg-right bg-no-repeat bg-cover">
+    <div className="grid place-items-center h-[90vh] bg-hero-pattern bg-right bg-fixed bg-no-repeat bg-cover">
       <div className="w-full ">
         <div className="relative w-full ">
           <div className="flex justify-center items-center flex-col absolute z-10 w-full">
@@ -29,6 +29,7 @@ function Spotlight() {
               fontColor={"text-black"}
               icon={Download}
               buttonFor={"Download for Mac"}
+              hoverColor={"hover:text-blue-600"}
             />
           </div>
           <div className="ml-16">
