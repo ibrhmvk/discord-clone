@@ -5,14 +5,15 @@ import Download from "../assets/download.png";
 
 function Spotlight() {
   return (
-    <div className="grid place-items-center h-[90vh] bg-hero-pattern bg-right bg-fixed bg-no-repeat bg-cover">
+    <div className="grid place-items-center h-[90vh] bg-hero-pattern bg-right bg-fixed bg-no-repeat bg-cover p-12">
       <div className="w-full ">
         <div className="relative w-full ">
-          <div className="flex justify-center items-center flex-col absolute z-10 w-full">
+          <div className="flex justify-center items-start lg:items-center flex-col absolute z-10 w-full">
             <h1 className="text-7xl font-sans font-bold text-white">
               IMAGINE A PLACE...
             </h1>
-            <p className="w-[45%] text-white text-base mt-12 font-sans leading-9 text-center">
+            
+            <p className="lg:w-[45%] w-[80%] text-white text-base mt-12 font-sans leading-9 lg:text-center">
               …..Where you can belong to a school club, a gaming group, or a
               worldwide art community. Where just you and a handful of friends
               can spend time together. A place that makes it easy to talk every
@@ -22,7 +23,7 @@ function Spotlight() {
         </div>
       </div>
       <div className="relative w-full ">
-        <div className="flex justify-center items-center mt-7 absolute z-10 w-full">
+        <div className="flex justify-start lg:justify-center items-center mt-7 absolute z-10 w-full">
           <div>
             <Button
               bgColor={"bg-slate-100"}
@@ -32,7 +33,7 @@ function Spotlight() {
               hoverColor={"hover:text-blue-600"}
             />
           </div>
-          <div className="ml-16">
+          <div className="ml-16 hidden lg:flex">
             <Button
               bgColor={"bg-gray-800"}
               fontColor={"text-white"}
@@ -42,8 +43,8 @@ function Spotlight() {
         </div>
       </div>
       <div className="relative w-full">
-        <img src={Right} className=" w-[45%] absolute top-[-300px] right-0" />
-        <img src={Left} className="w-2/5 absolute top-[-210px] left-0" />
+        <img src={Right} className=" w-[600px]  absolute top-[-225px] right-0" />
+        <img src={Left} className="w-[600px] hidden lg:flex absolute top-[-180px] left-[-200px]" />
       </div>
     </div>
   );
