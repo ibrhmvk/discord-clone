@@ -2,7 +2,6 @@ import InviteImage from "../assets/invite_only_landing.svg";
 
 function InviteOnly() {
   return (
-    
     <div className="flex justify-center items-center p-36 lg:flex-row flex-col">
       <div className="w-full lg:w-[1000px]">
         <img src={InviteImage} className="w-full h-auto" />
